@@ -1,0 +1,5 @@
+﻿  main.cpp
+d:\user\my documents\visual studio 2015\projects\processor\processor\console.h(26): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\user\my documents\visual studio 2015\projects\processor\processor\console.h(90): warning C4018: '<': signed/unsigned mismatch
+  processor.vcxproj -> d:\User\My Documents\Visual Studio 2015\Projects\processor\Debug\processor.exe
+  processor.vcxproj -> d:\User\My Documents\Visual Studio 2015\Projects\processor\Debug\processor.pdb (Partial PDB)

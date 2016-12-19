@@ -1,0 +1,51 @@
+# depslib dependency file v1.0
+1480742209 source:c:\users\asus\desktop\computer\alu.cpp
+	<cstddef>
+	"ALU.h"
+	<iostream>
+
+1480741293 c:\users\asus\desktop\computer\alu.h
+	"Register.h"
+
+1480769618 c:\users\asus\desktop\computer\register.h
+	<string>
+
+1480770574 source:c:\users\asus\desktop\computer\main.cpp
+	<iostream>
+	"Assembler.h"
+	"Processor.h"
+
+1480770450 c:\users\asus\desktop\computer\processor.h
+	<string>
+	<vector>
+	"Register.h"
+	"Memory.h"
+	"ALU.h"
+
+1480770772 source:c:\users\asus\desktop\computer\processor.cpp
+	<iostream>
+	"Processor.h"
+
+1480769647 source:c:\users\asus\desktop\computer\register.cpp
+	<cstddef>
+	"Register.h"
+
+1480769864 source:c:\users\asus\desktop\computer\assembler.cpp
+	<cctype>
+	<sstream>
+	<cstddef>
+	<iostream>
+	"Assembler.h"
+
+1480768340 c:\users\asus\desktop\computer\assembler.h
+	<vector>
+	<string>
+	"Processor.h"
+
+1480738763 c:\users\asus\desktop\computer\memory.h
+
+1480767683 source:c:\users\asus\desktop\computer\memory.cpp
+	<malloc.h>
+	<string.h>
+	"Memory.h"
+

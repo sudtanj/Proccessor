@@ -1,0 +1,149 @@
+##============================================================================##
+|| +------------------------------------------------------------------------+ ||
+|| |																		| ||
+|| |				PROYEK ORGANISASI DAN ARTSITEKTUR KOMPUTER				| ||
+|| |																		| ||
+|| +------------------------------------------------------------------------+ ||
+|| |																		| ||
+|| |								Anggota :								| ||
+|| |						Alvin Christianto Callysta						| ||
+|| |						Clarissa Veronica								| ||
+|| |						Jessica Sean									| ||
+|| |						Joseph											| ||
+|| |						Keren Angelia									| ||
+|| |						Kevin Kurniawan									| ||
+|| |						Leonardo Bunjamin								| ||
+|| |						Livia Andriana Lohanda							| ||
+|| |						Stefanus Christian								| ||
+|| |						Steven Albert									| ||
+|| |						Sudono Tanjung									| ||
+|| |																		| ||
+|| +------------------------------------------------------------------------+ ||
+##============================================================================##
+
+#########################
+#	Register 32-bit		#
+#=======================#
+#	Register 1			#
+#+++++++++++++++++++++++#
+#	Register 2			#
+#+++++++++++++++++++++++#
+#	Register 3			#
+#+++++++++++++++++++++++#
+#	Register 4			#
+#+++++++++++++++++++++++#
+#	Register 5			#
+#+++++++++++++++++++++++#
+#	Flag Register 		#	ZeroBit, CarryBit, BorrowBit, SignBit
+#+++++++++++++++++++++++#
+#	Program Counter 	#
+#+++++++++++++++++++++++#
+#	Loop Counter		#	
+#########################
+
+##########################
+#  Instruction Register  #
+##########################
+
+*********************************
+*			Big Endian			*
+*********************************
+*			RISC (5 bit)		*
+*********************************
+
+
++---------------------------------------+
+|		Instruction Set (~32)			|
++-----------------------+---------------+
+|	Instruction Code	|	OpCode		|
++-----------------------+---------------+
+|	Add					| 	ADD			| ok	00000	reg reg 000 , reg mem 001 , reg imm 010 , mem reg 011
++-----------------------+---------------+
+|	Subsctraction		| 	SUB			| ok	00001	reg reg 000 , reg mem 001 , reg imm 010 , mem reg 011
++-----------------------+---------------+
+|	Multiply			| 	MUL			| ok	00010	reg reg 000 , reg mem 001 , reg imm 010 , mem reg 011
++-----------------------+---------------+
+|	Division			| 	DIV			| ok	00011	reg reg 000 , reg mem 001 , reg imm 010 , mem reg 011
++-----------------------+---------------+
+|	Modulo				| 	MOD			| ok	00100	reg reg 000 , reg mem 001 , reg imm 010 , mem reg 011
++-----------------------+---------------+
+|	Compare				| 	CMP			| ok	00101	reg reg 000 , reg mem 001 , reg imm 010 , mem reg 011
++-----------------------+---------------+
+|	Shift Right			| 	SHR			| ok	00110	reg 000 , mem 001
++-----------------------+---------------+ 
+|	Shift Left			| 	SHL			| ok	00111	reg 000 , mem 001
++-----------------------+---------------+
+|	Rotate Bit			|	ROT			| (?)	01000	reg 000 , mem 001
++-----------------------+---------------+
+|	And					|	AND			| ok	01001	reg reg 000 , reg mem 001 , reg imm 010 , mem reg 011
++-----------------------+---------------+
+|	Or					|	OR			| ok	01010	reg reg 000 , reg mem 001 , reg imm 010 , mem reg 011
++-----------------------+---------------+
+|	Not					|	NOT			| ok	01011	reg 000 , mem 001
++-----------------------+---------------+
+|	Exclusive OR		|	XOR			| ok	01100	reg reg 000 , reg mem 001 , reg imm 010 , mem reg 011
++-----------------------+---------------+
+|	Jump				| 	JUMP		| 		01101	address 100
++-----------------------+---------------+
+|	Jump Less			| 	JL			|		01110	address 100
++-----------------------+---------------+
+|	Jump Greater		| 	JG			|		01111	address 100
++-----------------------+---------------+
+|	Jump Equal			| 	JE			|		10000	address 100
++-----------------------+---------------+
+|	Loop				| 	LOOP		|		10001 	address 100
++-----------------------+---------------+
+|	Move				| 	MOV			| ok	10010	reg reg 000 , reg mem 001 , reg imm 010 , mem reg 011
++-----------------------+---------------+
+|	Read Memory			| 	READ		|		10011	reg mem 000
++-----------------------+---------------+
+|	Write Memory		| 	WRITE		|		10100	reg mem 000
++-----------------------+---------------+
+|	Call Function		|	CALL		| (?)	10101 	address 100
++-----------------------+---------------+
+
+Instruction Set Format
++----------+------------------------------------------------------+
+| Opcode   | Register                                             |
++----------+------------------------------------------------------+
+|	8 bit  |        	       24 bit							  |
++----------+------------------------------------------------------+
+
+Opcode 	| Register1  |	Register2
+Opcode	| Register1	 |	Direct Input
+Opcode 	| Register1  |	Address 
+Opcode	| Address
+
+
+!!!!!!!
+Cara ambil dan input ke register di fix
+Cara ambil dan input ke memory di fix
+contoh yang masukin / implementasi dan contoh instruksion add 
+KALAU SUDAH BISA BAGI TUGAS KE YANG LAIN #Maybe
+!!!!!!!
+
+#=======================================#
+|		MEMORY	=	128 Bytes			|
+#=======================================#
+
+
+#=======================================#
+|										|
+#=======================================#
+
+
+
+class Processor
+class Memory
+- file menyimpan : ada program / data ("executable" dalam model perancangan) binary -> instruksi dalam prosesor
+class Computer
+class Disk/Storage
+class Keyboard untuk memberi perintah
+
+
+Mono/Multi program
+Virtual Memory Ya/Tidak
+
+
+Parameter ganti jangan register melainkan angka / biner
+mengubah angka ke biner
